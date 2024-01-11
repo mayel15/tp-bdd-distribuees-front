@@ -1,0 +1,10 @@
+.center-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    margin-top: 0; 
+    margin-right: 200px; 
+    margin-bottom: 200px; 
+    margin-left: 200px; 
+}
