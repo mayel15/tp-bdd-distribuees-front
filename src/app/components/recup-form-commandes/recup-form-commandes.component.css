@@ -1,0 +1,11 @@
+.table-container {
+    width: 70%;
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+    display: flex;
+    justify-content: center; /* Centre le contenu du conteneur */
+  }
+  
+  .table {
+    width: 100%;
+  }
+  

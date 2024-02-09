@@ -17,6 +17,11 @@ import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { GroupTitleComponent } from './components/group-title/group-title.component';
 import { MembreTitleComponent } from './components/membre-title/membre-title.component';
 import { MaterielTitleComponent } from './components/materiel-title/materiel-title.component';
+import { PageRecupMaterielComponent } from './pages/page-recup-materiel/page-recup-materiel.component';
+import { RecupFormComponent } from './components/recup-form/recup-form.component';
+import { PageRecupCommandeComponent } from './pages/page-recup-commande/page-recup-commande.component';
+import { SelectFiltresComponent } from './components/select-filtres/select-filtres.component';
+import { RecupFormCommandesComponent } from './components/recup-form-commandes/recup-form-commandes.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +39,12 @@ import { MaterielTitleComponent } from './components/materiel-title/materiel-tit
     PageHomeComponent,
     GroupTitleComponent,
     MembreTitleComponent,
-    MaterielTitleComponent
+    MaterielTitleComponent,
+    PageRecupMaterielComponent,
+    RecupFormComponent,
+    PageRecupCommandeComponent,
+    SelectFiltresComponent,
+    RecupFormCommandesComponent
   ],
   imports: [
     BrowserModule,
