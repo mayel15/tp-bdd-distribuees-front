@@ -22,6 +22,8 @@ import { RecupFormComponent } from './components/recup-form/recup-form.component
 import { PageRecupCommandeComponent } from './pages/page-recup-commande/page-recup-commande.component';
 import { SelectFiltresComponent } from './components/select-filtres/select-filtres.component';
 import { RecupFormCommandesComponent } from './components/recup-form-commandes/recup-form-commandes.component';
+import { PageConnexionComponent } from './pages/page-connexion/page-connexion.component';
+import { ConnexionFormComponent } from './components/connexion-form/connexion-form.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { RecupFormCommandesComponent } from './components/recup-form-commandes/r
     RecupFormComponent,
     PageRecupCommandeComponent,
     SelectFiltresComponent,
-    RecupFormCommandesComponent
+    RecupFormCommandesComponent,
+    PageConnexionComponent,
+    ConnexionFormComponent
   ],
   imports: [
     BrowserModule,

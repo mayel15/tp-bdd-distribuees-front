@@ -6,6 +6,7 @@ import { PageMaterielComponent } from './pages/page-materiel/page-materiel.compo
 import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { PageRecupMaterielComponent } from './pages/page-recup-materiel/page-recup-materiel.component';
 import { PageRecupCommandeComponent } from './pages/page-recup-commande/page-recup-commande.component';
+import { PageConnexionComponent } from './pages/page-connexion/page-connexion.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'materiel', component: PageMaterielComponent },
   { path: 'recupMateriel', component: PageRecupMaterielComponent },
   { path: 'recupCommande', component: PageRecupCommandeComponent },
+  { path: 'connexion', component: PageConnexionComponent },
 ];
 
 @NgModule({
