@@ -10,7 +10,8 @@ import { PageConnexionComponent } from './pages/page-connexion/page-connexion.co
 
 
 const routes: Routes = [
-  { path: '', component: PageHomeComponent },
+  { path: '', component: PageConnexionComponent },
+  { path: 'home', component: PageHomeComponent },
   { path: 'membre', component: PageMembreComponent },
   { path: 'groupe', component: PageGroupeComponent },
   { path: 'materiel', component: PageMaterielComponent },
