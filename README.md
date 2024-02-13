@@ -1,27 +1,30 @@
-# TpBddDistrubueesFront
+# Membres de l'équipe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+- Alaaeddin ALMAJJO [@aladinMJ](https://github.com/aladinMJ)
+- Ayman DOULKOM [@ayman-h226](https://github.com/ayman-h226)
+- Pape THIAM [@mayel15](https://github.com/mayel15)
 
-## Development server
+# Back-end
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+La partie back end du projet est disponible ici:
+`https://github.com/mayel15/tp-bdd-distribuees-back`
 
-## Code scaffolding
+# Lancer le projet front
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Rassurez vous d'avoir `Angular` et `Node` installés.
 
-## Build
+## Configuration
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Cloner le projet :
+  `https://github.com/mayel15/tp-bdd-distribuees-front.git`
 
-## Running unit tests
+- Installer les dependences
+  `npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Démarrer le server
 
-## Running end-to-end tests
+- Il faut démarrer au préalable le backend qui est ici:
+  `https://github.com/mayel15/tp-bdd-distribuees-back`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Lancer l'application angular avec:
+  `npm run start`
