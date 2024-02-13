@@ -1,15 +1,15 @@
 <form class="row g-3 center-form">
     <div class="col-md-6">
         <label for="serialNumber" class="form-label">Numéro de série</label>
-        <input type="serNum" class="form-control" id="serialNumber" [(ngModel)]="numeroSerie" name="numeroSerie"]>
+        <input type="serNum" class="form-control" id="serialNumber" [(ngModel)]="numeroSerie" name="numeroSerie">
     </div>
     <div class="col-md-6">
         <label for="brand" class="form-label">Marque</label>
-        <input type="brnd" class="form-control" id="brand" [(ngModel)]="marque" name="marque"]>
+        <input type="brnd" class="form-control" id="brand" [(ngModel)]="marque" name="marque">
     </div>
     <div class="col-md-6">
-        <label for="model" class="form-label">Modèlel</label>
-        <input type="mdl" class="form-control" id="model" [(ngModel)]="modele" name="modele"]>
+        <label for="model" class="form-label">Modele</label>
+        <input type="mdl" class="form-control" id="model" [(ngModel)]="modele" name="modele">
     </div>
     <div class="col-md-6">
         <label for="typeMateriel" class="form-label">Type</label>
@@ -26,14 +26,19 @@
     </div>
     <div class="col-md-6">
         <label for="price" class="form-label">Price</label>
-        <input type="number" class="form-control" id="price" [(ngModel)]="prix" name="prix"]>
+        <input type="number" class="form-control" id="price" [(ngModel)]="prix" name="prix">
     </div>
+
     <div class="col-md-6">
-        <label for="price" class="form-label">Price</label>
-        <input type="text" class="form-control" id="price" [(ngModel)]="groupe" name="groupe"]>
+        <label for="price" class="form-label">Groupe</label>
+        <select class="form-select" id="price" [(ngModel)]="groupe" name="prix">
+          <option selected>Choisir...</option>
+          <option *ngFor="let option of options" [value]="option._id">{{ option.nom }}</option>
+        </select>
     </div>
+      
     
     <div class="col-12">
-      <button type="submit" class="btn btn-primary" (click)="onSubmit()">Register</button>
+      <button type="submit" class="btn btn-primary" (click)="onSubmit()">Ajouter</button>
     </div>
-  </form>
+</form>

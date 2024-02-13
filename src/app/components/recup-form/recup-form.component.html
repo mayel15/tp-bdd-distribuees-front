@@ -2,29 +2,21 @@
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
+          <th scope="col">Numero de serie</th>
+          <th scope="col">Marque</th>
+          <th scope="col">Modele</th>
+          <th scope="col">Type</th>
+          <th scope="col">Prix</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>@twitter</td>
+        <tr *ngFor="let materiel of materiels" >
+          
+          <td>{{materiel.numeroSerie}}</td>
+          <td>{{materiel.marque}}</td>
+          <td>{{materiel.modele}}</td>
+          <td>{{materiel.typeMateriel}}</td>
+          <td>{{materiel.prix}}</td>
         </tr>
       </tbody>
     </table>

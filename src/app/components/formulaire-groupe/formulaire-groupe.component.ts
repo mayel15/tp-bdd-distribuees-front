@@ -45,6 +45,7 @@ export class FormulaireGroupeComponent {
         this.codePostal = '';
       })
       .catch(error => {
+        alert('Erreur lors de l\'enregistrement du groupe !');
         console.error('Erreur lors de l\'envoi des données:', error);
       });
   }

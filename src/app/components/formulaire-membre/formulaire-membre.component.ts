@@ -22,6 +22,20 @@ export class FormulaireMembreComponent {
 
   constructor() { }
 
+  options: any[] = []; // tableau pour stocker les options
+  ngOnInit() {
+    // Appel à votre API pour récupérer les données
+    fetch(API_URL+'/groupes')
+      .then(response => response.json())
+      .then(data => {
+        this.options = data; // Stockage des données dans le tableau d'options
+        console.log("Données récupérées depuis l\'API :", data);
+      })
+      .catch(error => {
+        console.error('Erreur lors de la récupération des données depuis l\'API :', error);
+      });
+  }
+
   onSubmit() {
     const formData = {
       idMembre: this.idMembre,
@@ -51,7 +65,6 @@ export class FormulaireMembreComponent {
         return response.json();
       })
       .then(data => {
-        alert('Membre enregistré avec succès !');
         console.log('Réponse du serveur:', data);
         // Réinitialiser le formulaire après l'envoi des données avec succès
         this.idMembre = 0;
@@ -67,6 +80,7 @@ export class FormulaireMembreComponent {
         this.groupe = '';
       })
       .catch(error => {
+        alert('Erreur lors de l\'enregistrement du membre.');
         console.error('Erreur lors de l\'envoi des données:', error);
       });
   }

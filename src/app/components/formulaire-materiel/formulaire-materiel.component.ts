@@ -14,7 +14,22 @@ export class FormulaireMaterielComponent {
   prix: number = 0;
   groupe: string = '';
 
+  options: any[] = []; // tableau pour stocker les options
+
   constructor() { }
+
+  ngOnInit() {
+    // Appel à votre API pour récupérer les données
+    fetch(API_URL+'/groupes')
+      .then(response => response.json())
+      .then(data => {
+        this.options = data; // Stockage des données dans le tableau d'options
+        console.log("Données récupérées depuis l\'API :", data);
+      })
+      .catch(error => {
+        console.error('Erreur lors de la récupération des données depuis l\'API :', error);
+      });
+  }
 
   onSubmit() {
     const formData = {
@@ -51,6 +66,7 @@ export class FormulaireMaterielComponent {
         this.groupe = '';
       })
       .catch(error => {
+        alert('Materiel non enregistré !');
         console.error('Erreur lors de l\'envoi des données:', error);
       });
   }
