@@ -21,7 +21,7 @@ La partie back-end du projet est disponible ici:
 - Installer les dependences
   `npm install`
 
-## Démarrer le server
+## Démarrer l'application
 
 - Il faut démarrer au préalable le backend qui est ici:
   [tp-bdd-distribuees-back](https://github.com/mayel15/tp-bdd-distribuees-back)
