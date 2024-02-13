@@ -16,7 +16,7 @@ La partie back-end du projet est disponible ici:
 ## Configuration
 
 - Cloner le projet :
-  `https://github.com/mayel15/tp-bdd-distribuees-front.git`
+  `git clone https://github.com/mayel15/tp-bdd-distribuees-front.git`
 
 - Installer les dependences
   `npm install`
@@ -24,7 +24,7 @@ La partie back-end du projet est disponible ici:
 ## Démarrer le server
 
 - Il faut démarrer au préalable le backend qui est ici:
-  `https://github.com/mayel15/tp-bdd-distribuees-back`
+  [tp-bdd-distribuees-back](https://github.com/mayel15/tp-bdd-distribuees-back)
 
 - Lancer l'application angular avec:
   `npm run start`
