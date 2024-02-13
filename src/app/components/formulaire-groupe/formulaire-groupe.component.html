@@ -1,17 +1,21 @@
-<form class="row g-3 center-form">
-    <div class="col-md-6">
-        <label for="groupName" class="form-label">Group Name</label>
-        <input type="Fname" class="form-control" id="groupName">
-    </div>
-    <div class="col-md-6">
-      <label for="inputCity" class="form-label">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="col-md-2">
-      <label for="inputZip" class="form-label">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Register</button>
-    </div>
-  </form>
+<form class="row g-3 center-form" (submit)="onSubmit()">
+  <div class="col-md-6">
+    <label for="numeroGroupe" class="form-label">Numero de groupe</label>
+    <input type="number" class="form-control" id="numeroGroupe"  name="numeroGroupe" [(ngModel)]="numeroGroupe">
+  </div>
+  <div class="col-md-6">
+      <label for="groupName" class="form-label">Nom du groupe</label>
+      <input type="text" class="form-control" id="groupName" name="nom" [(ngModel)]="nom">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">Ville</label>
+    <input type="text" class="form-control" id="inputCity" name="ville" [(ngModel)]="ville">
+  </div>
+  <div class="col-md-6">
+    <label for="inputZip" class="form-label">Code Postal</label>
+    <input type="text" class="form-control" id="inputZip" name="codePostal" [(ngModel)]="codePostal">
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Enregistrer</button>
+  </div>
+</form>

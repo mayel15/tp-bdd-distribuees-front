@@ -24,6 +24,7 @@ import { SelectFiltresComponent } from './components/select-filtres/select-filtr
 import { RecupFormCommandesComponent } from './components/recup-form-commandes/recup-form-commandes.component';
 import { PageConnexionComponent } from './pages/page-connexion/page-connexion.component';
 import { ConnexionFormComponent } from './components/connexion-form/connexion-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { ConnexionFormComponent } from './components/connexion-form/connexion-fo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
