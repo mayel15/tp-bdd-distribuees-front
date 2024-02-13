@@ -6,7 +6,7 @@
 
 # Back-end
 
-La partie back end du projet est disponible ici:
+La partie back-end du projet est disponible ici:
 `https://github.com/mayel15/tp-bdd-distribuees-back`
 
 # Lancer le projet front
